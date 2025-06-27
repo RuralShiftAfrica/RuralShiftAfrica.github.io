@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RuralShiftAfrica - Empowering Youth Through Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/qvRR6i0.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .teal-bg {
+            background-color: #008080;
+        }
+
+        .sky-blue-bg {
+            background-color: #e3f0fa;
+        }
+
+        .btn-primary {
+            background-color: #1e3a8a;
+            color: white;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-african:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card-african {
+            border-top: 4px solid #fbbf24;
+            transition: all 0.3s ease;
+        }
+
+        .card-african:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .typewriter {
+            border-right: 3px solid #fbbf24;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #fbbf24; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-img {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .team-member:hover .team-overlay {
+            opacity: 1;
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #f3f3f3;
+        }
+        
+        .dark-mode .bg-white {
+            background-color: #2d2d2d !important;
+            color: #f3f3f3 !important;
+        }
+        
+        .dark-mode .text-gray-700 {
+            color: #d1d1d1 !important;
+        }
+        
+        .dark-mode .bg-gray-100 {
+            background-color: #333333 !important;
+        }
+    </style>
+    <meta name="description" content="RuralShiftAfrica empowers youth in West Pokot, Kenya, through digital literacy and tech education. Join us to bridge the digital divide!">
+    <meta property="og:title" content="RuralShiftAfrica - Empowering Youth Through Tech">
+    <meta property="og:description" content="Empowering girls and children in West Pokot, Kenya, with digital skills. Support, donate, or volunteer today!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruralshiftafrica.org">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RuralShiftAfrica - Empowering Youth Through Tech">
+    <meta name="twitter:description" content="Empowering girls and children in West Pokot, Kenya, with digital skills. Support, donate, or volunteer today!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80">
+</head>
+<body class="bg-gray-50">
+    
+
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white py-4 sticky top-0 z-40 shadow-lg" aria-label="Main Navigation">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Custom Logo Placeholder -->
+                <div class="w-14 h-14 rounded-full flex items-center justify-center mr-3 border-4 border-yellow-400 overflow-hidden bg-white shadow-lg">
+                    <img src="https://i.imgur.com/qvRR6i0.png" alt="RuralShiftAfrica Logo" class="w-14 h-14 object-cover rounded-full border-4 border-yellow-400 bg-white shadow-lg" />
+                </div>
+                <a href="#" class="text-xl font-bold text-white">RuralShift<span class="text-yellow-400">Africa</span></a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-yellow-400 transition" aria-label="Home">Home</a>
+                <a href="#mission" class="hover:text-yellow-400 transition" aria-label="Mission">Mission</a>
+                <a href="#about" class="hover:text-yellow-400 transition" aria-label="About">About</a>
+                <a href="#support" class="hover:text-yellow-400 transition" aria-label="Support">Support</a>
+                <a href="#donate" class="hover:text-yellow-400 transition" aria-label="Donate">Donate</a>
+                <a href="#contact" class="hover:text-yellow-400 transition" aria-label="Contact">Contact</a>
+            </div>
+            
+            <button class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-blue-900 text-white py-4 px-4 fixed w-full z-30 shadow-lg top-16">
+        <div class="flex flex-col space-y-4 text-center">
+            <a href="#home" class="hover:text-yellow-400 transition">Home</a>
+            <a href="#mission" class="hover:text-yellow-400 transition">Mission</a>
+            <a href="#about" class="hover:text-yellow-400 transition">About</a>
+            <a href="#support" class="hover:text-yellow-400 transition">Support</a>
+            <a href="#donate" class="hover:text-yellow-400 transition">Donate</a>
+            <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-800/80 to-yellow-200/80 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1472&q=80" 
+             alt="African children learning computers" 
+             class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="container mx-auto px-4 z-10 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-yellow-100 mb-6 drop-shadow-lg">
+                <span class="text-yellow-300">RuralShift</span><span class="text-blue-900">Africa</span>
+            </h1>
+            <h2 class="text-xl md:text-4xl text-blue-50 mb-8 font-medium drop-shadow">Unlocking Futures, Inspiring Change in West Pokot</h2>
+            
+            <div class="typewriter text-xl md:text-1xl text-blue-1200 mb-12 mx-auto max-w-2xl bg-yellow-100/80 px-6 py-4 rounded-lg shadow">
+                Empowering children and youth to rise above raids and harmful traditions—through technology, hope, and opportunity.
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#donate" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 md:px-6 rounded-full transition transform hover:scale-105 shadow-lg text-sm md:text-base">
+                    <i class="fas fa-donate mr-2"></i> Donate Now
+                </a>
+                <a href="#support" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105">
+                    <i class="fas fa-child mr-2"></i> Sponsor a Child
+                </a>
+                <a href="#contact" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105">
+                    <i class="fas fa-hands-helping mr-2"></i> Join as Volunteer
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#mission" class="text-white animate-bounce">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Why West Pokot Section (ADDED) -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-black">Why <span class="text-red-600">West Pokot?</span></h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-700 mb-6">
+                West Pokot is a vibrant, resilient region in Kenya, yet faces significant challenges in digital access and education. RuralShiftAfrica is dedicated to bridging this gap, empowering local youth—especially girls—with the skills and confidence to thrive in the digital age. Our programs are tailored to the unique needs and dreams of West Pokot's communities.
+            </p>
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="West Pokot landscape" class="mx-auto rounded-lg shadow-lg w-full max-w-xl">
+        </div>
+    </section>
+
+    <!-- Challenges & Our Response (ADDED) -->
+    <section class="py-16 bg-gradient-to-r from-blue-50 via-yellow-50 to-blue-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">Turning Challenges Into Opportunities</h2>
+            <p class="max-w-2xl mx-auto text-lg text-gray-800 mb-6">
+                In West Pokot, children and youth often face disruptions to their education due to cattle raids and harmful cultural practices. These challenges can lead to lost opportunities and put young people at risk of negative influences. <span class="font-semibold text-yellow-700">RuralShiftAfrica</span> offers a safe, inspiring alternative—keeping children and youth engaged, building digital skills, and opening doors to brighter futures. By shifting focus from conflict to creativity, we help young people discover their potential and become positive change-makers in their communities.
+            </p>
+            <div class="mt-8">
+                <a href="#support" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transition text-lg">Support Youth Transformation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="py-20 bg-gradient-to-r from-blue-700 to-blue-500 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Our <span class="text-black">Approach</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div class="bg-black bg-opacity-30 p-6 md:p-8 rounded-xl backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-laptop-code text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">Practical Learning</h3>
+                    <p class="text-center">
+                        Hands-on tech education tailored to local needs, using real-world projects that solve community challenges.
+                    </p>
+                </div>
+                
+                <div class="bg-black bg-opacity-30 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-female text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">Girls First</h3>
+                    <p class="text-center">
+                        Special programs to bridge the gender gap in tech, creating safe spaces for girls to learn and lead.
+                    </p>
+                </div>
+                
+                <div class="bg-black bg-opacity-30 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-users text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4">Community Focus</h3>
+                    <p class="text-center">
+                        Engaging parents and local leaders to create sustainable change through technology education.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section id="mission" class="py-20 sky-blue-bg text-indigo-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Our <span class="text-red-600">Purpose</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-black">Mission</h3>
+                    <p class="text-gray-700 text-center">
+                        To bridge the digital divide in rural Kenya by providing safe, creative alternatives to conflict and negative traditions. We empower the children and youth of West Pokot with tech skills, keeping them engaged, inspired, and ready to build positive futures for themselves and their communities.
+                    </p>
+                </div>
+                
+                <div class="bg-yellow-50 p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-eye text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-black">Vision</h3>
+                    <p class="text-gray-700 text-center">
+                        A generation of digitally empowered children and youth rising from West Pokot, creating solutions for local challenges and competing in the global digital economy—inspiring peace, progress, and hope.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Our <span class="text-red-600">Story</span>
+            </h2>
+                        
+                        <!-- Timeline -->
+<div class="border-l-4 border-red-600 pl-6 md:pl-8 space-y-8 md:space-y-12">
+    <div class="relative">
+        <div class="absolute -left-8 md:-left-12 top-0 w-6 h-6 md:w-8 md:h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+        </div>
+        <h4 class="text-xl font-bold mb-2 text-black">May 2025 – Humble Beginnings</h4>
+        <p class="text-gray-700">
+            Inspired by the growing digital divide in West Pokot, the idea of RuralShiftAfrica was born. A small team began dreaming of a community-based tech initiative focused on equipping disadvantaged children and girls with essential digital skills.
+        </p>
+    </div>
+
+    <div class="relative">
+        <div class="absolute -left-12 top-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+        </div>
+        <h4 class="text-xl font-bold mb-2 text-black">June 2025 – Call for Support</h4>
+        <p class="text-gray-700">
+            Outreach officially began for sponsors, donors, and volunteers to bring the vision to life. We are seeking laptops, funding, internet access, and teaching support to launch our very first community class.
+            <br><span class="italic text-sm text-gray-600">"With just one laptop, we could spark a future. Imagine what ten can do."</span>
+        </p>
+    </div>
+
+    <div class="relative">
+        <div class="absolute -left-12 top-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+        </div>
+        <h4 class="text-xl font-bold mb-2 text-black">Future Goals – Expanding Reach</h4>
+        <p class="text-gray-700">
+            Once launched, our goal is to establish community-based learning centers and mobile tech labs to serve even the most remote areas of West Pokot.
+        </p>
+    </div>
+
+    <div class="relative">
+        <div class="absolute -left-12 top-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+        </div>
+        <h4 class="text-xl font-bold mb-2 text-black">Future Vision – Girls Who Code Pokot</h4>
+        <p class="text-gray-700">
+            We're planning a dedicated program to encourage young girls to embrace coding, STEM, and leadership through hands-on learning, mentorship, and storytelling from female tech leaders.
+        </p>
+    </div>
+
+    <div class="relative">
+        <div class="absolute -left-12 top-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+        </div>
+        <h4 class="text-xl font-bold mb-2 text-black">Next Milestone – First Launch</h4>
+        <p class="text-gray-700">
+            With your support, we aim to launch our first training center by late 2025. Every donation, laptop, and helping hand brings us closer to that goal.
+        </p>
+    </div>
+</div>
+
+<!-- Founder Story (ADDED) -->
+<div class="mt-12 max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
+    <div class="flex flex-col items-center mb-4">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEBfpOvUQIvUA/profile-displayphoto-shrink_200_200/B4DZbQKL0.IEAc-/0/1747249053654?e=1756339200&v=beta&t=4SteZFa614KhB71iha5W8k8w7PVqZm9DHgpulwE1XRg" alt="Irene Cherono" class="w-32 h-32 rounded-full shadow-lg mb-4 object-cover">
+    </div>
+    <h3 class="text-2xl font-bold mb-4 text-black">Our Founder</h3>
+    <p class="text-gray-800 text-lg">
+        <span class="font-semibold">Irene Cherono</span> grew up in West Pokot, where she saw firsthand the challenges facing children and youth. After high school, she moved to Nairobi to pursue a degree in computer science. Inspired by her experiences and education, Irene returned home with a vision: to empower her community through technology and education, helping children and youth build brighter, more hopeful futures.
+    </p>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How You Can Support -->
+    <section id="support" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                How You Can <span class="text-red-600">Support</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+                <!-- Donate Devices -->
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg card-hover transition hover:shadow-xl">
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-laptop text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-indigo-900">Donate Laptops/Desktops</h3>
+                    <p class="text-gray-700 text-center mb-6">
+                        Your old laptop or desktop can become a child's window to the digital world. We refurbish and 
+                        repurpose technology for our learning centers.
+                    </p>
+                    <a href="#donate" class="block text-center bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-full transition">
+                        Learn More
+                    </a>
+                </div>
+                
+                <!-- Sponsor Materials -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-book text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-black">Sponsor Materials</h3>
+                    <p class="text-gray-700 text-center mb-6">
+                        Help provide textbooks, notebooks, and learning kits that make tech education accessible and 
+                        engaging for our students.
+                    </p>
+                    <a href="#donate" class="block text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition">
+                        Contribute
+                    </a>
+                </div>
+                
+                <!-- Volunteer -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-hands-helping text-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-black">Volunteer</h3>
+                    <p class="text-gray-700 text-center mb-6">
+                        Share your skills! Teach remotely or onsite, mentor students, or help with administrative tasks. 
+                        Every hour makes a difference.
+                    </p>
+                    <a href="#contact" class="block text-center bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full transition">
+                        Get Involved
+                    </a>
+                </div>
+                
+                <!-- Internet Bundles -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-wifi text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-black">Internet Access</h3>
+                    <p class="text-gray-700 text-center mb-6">
+                        Sponsor internet bundles to keep our learning centers connected. Just $20 provides a month of 
+                        connectivity for an entire class.
+                    </p>
+                    <a href="#donate" class="block text-center bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded-full transition">
+                        Support
+                    </a>
+                </div>
+                
+                <!-- Financial Donation -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-donate text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-black">Financial Support</h3>
+                    <p class="text-gray-700 text-center mb-6">
+                        Your monetary contributions help sustain our programs, pay trainers, and expand our reach to 
+                        more underserved communities.
+                    </p>
+                    <a href="#donate" class="block text-center bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition">
+                        Donate Now
+                    </a>
+                </div>
+                
+                <!-- Spread the Word -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg card-hover transition">
+                    <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-share-alt text-black text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 text-black">Spread the Word</h3>
+                    <p class="text-gray-700 text-center mb-6">
+                        Follow us on social media, share our story, and help connect us with potential partners and 
+                        sponsors who can amplify our impact.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-black hover:text-red-600 transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://x.com/ruralshift" class="text-black hover:text-red-600 transition" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com/ruralshiftafrica" class="text-black hover:text-red-600 transition" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ruralshiftafrica" class="text-black hover:text-red-600 transition" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Make a <span class="text-red-600">Difference</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-red-600 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Your Support Matters</h3>
+                        <p class="mb-6">
+                            Every contribution, no matter the size, helps us bridge the digital divide in West Pokot. 
+                            Here's what your donation can provide:
+                        </p>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+                                <span>$25 - School supplies for one student for a year</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+                                <span>$50 - Internet access for a classroom for one month</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+                                <span>$100 - Sponsor a girl's participation in our coding bootcamp</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-yellow-400 mt-1 mr-3"></i>
+                                <span>$500 - Help refurbish and deploy a donated computer</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-8 bg-black bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Other Ways to Give:</h4>
+                            <p>
+                                Corporate matching • Stock donations • In-kind gifts • Planned giving
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-black">Donation Form</h3>
+                        
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="name">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="email">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Donation Type</label>
+                                <div class="flex flex-wrap gap-2">
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="donationType" value="one-time" class="form-radio text-red-600" checked>
+                                        <span class="ml-2">One-time</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="donationType" value="monthly" class="form-radio text-red-600">
+                                        <span class="ml-2">Monthly</span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="donationType" value="device" class="form-radio text-red-600">
+                                        <span class="ml-2">Device Donation</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="amount">Amount (USD)</label>
+                                <select id="amount" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                                    <option value="25">$25</option>
+                                    <option value="50">$50</option>
+                                    <option value="100">$100</option>
+                                    <option value="250">$250</option>
+                                    <option value="500">$500</option>
+                                    <option value="custom">Custom Amount</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Payment Method</label>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <button type="button" class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded-lg flex items-center justify-center">
+                                        <i class="fab fa-cc-paypal text-blue-500 mr-2"></i> PayPal
+                                    </button>
+                                    <button type="button" class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-mobile-alt text-green-500 mr-2"></i> M-PESA
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                                Complete Donation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center text-black hover:text-red-600 transition">
+                    <button id="downloadBrochureBtn" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-2 px-6 rounded-full shadow transition">
+                        <i class="fas fa-download mr-2"></i> Download Sponsorship Brochure (PDF)
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Sponsors -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Champions Behind the <span class="text-red-600">Code</span>
+            </h2>
+            <div class="text-center mb-10">
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+                    We are currently seeking visionary partners and sponsors to join us in empowering the next generation of tech leaders in West Pokot. Your logo or name could be featured here as a champion for change!
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg flex flex-col items-center justify-center h-32 hover:shadow-lg transition">
+                    <span class="text-gray-400 text-xl font-bold">Your Logo Here</span>
+                    <span class="text-xs text-gray-500 mt-2">Become a Sponsor</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex flex-col items-center justify-center h-32 hover:shadow-lg transition">
+                    <span class="text-gray-400 text-xl font-bold">Your Brand</span>
+                    <span class="text-xs text-gray-500 mt-2">Support Our Mission</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex flex-col items-center justify-center h-32 hover:shadow-lg transition">
+                    <span class="text-gray-400 text-xl font-bold">Sponsor Spot</span>
+                    <span class="text-xs text-gray-500 mt-2">Contact Us</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex flex-col items-center justify-center h-32 hover:shadow-lg transition">
+                    <span class="text-gray-400 text-xl font-bold">Your Logo</span>
+                    <span class="text-xs text-gray-500 mt-2">Join the Movement</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex flex-col items-center justify-center h-32 hover:shadow-lg transition">
+                    <span class="text-gray-400 text-xl font-bold">Future Partner</span>
+                    <span class="text-xs text-gray-500 mt-2">Let's Collaborate</span>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-gray-700 mb-6">
+                    Interested in becoming a corporate sponsor? We offer various partnership opportunities and would love to feature your support here.
+                </p>
+                <a href="#contact" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition">
+                    Partner With Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Moments of <span class="text-red-600">Impact</span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Computer with code on screen -->
+                <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Computer with code on screen" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                </div>
+                <!-- Pokot landscape -->
+                <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" 
+                         alt="Pokot landscape" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                </div>
+                <!-- Happy African Pokot children -->
+                <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" 
+                         alt="Happy African Pokot children" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                </div>
+                <!-- Computer with code (closeup) -->
+                <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" 
+                         alt="Closeup of code on computer" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                </div>
+                <!-- Pokot landscape (different angle) -->
+                <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" 
+                         alt="Pokot landscape view" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                </div>
+                <!-- Happy African children group -->
+                <div class="gallery-img overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=800&q=80" 
+                         alt="Happy African children group" 
+                         class="w-full h-64 object-cover transition duration-500 hover:scale-110">
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition">
+                    View Full Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Meet Our <span class="text-red-600">Team</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Founder -->
+                <div class="team-member text-center px-2">
+                    <div class="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-400">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEBfpOvUQIvUA/profile-displayphoto-shrink_200_200/B4DZbQKL0.IEAc-/0/1747249053654?e=1756339200&v=beta&t=4SteZFa614KhB71iha5W8k8w7PVqZm9DHgpulwE1XRg" 
+                             alt="Irene Cherono" 
+                             class="w-full h-full object-cover">
+                        <div class="team-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition">
+                            <div class="text-white p-4">
+                                <p>"After high school, I went to Nairobi to pursue computer science. My dream was always to return and help transform my community in West Pokot through technology and education."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-black">Irene Cherono</h3>
+                    <p class="text-red-600 font-medium mb-2">Founder & Director</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lead Trainer -->
+                <div class="team-member text-center">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-400">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" 
+                             alt="Kiprotich Mutai" 
+                             class="w-full h-full object-cover">
+                        <div class="team-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition">
+                            <div class="text-white p-4">
+                                <p>"Seeing students solve problems with code is my greatest joy."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-black">Kiprotich Mutai</h3>
+                    <p class="text-red-600 font-medium mb-2">Lead Trainer</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Girls Program Coordinator -->
+                <div class="team-member text-center">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-400">
+                        <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=400&q=80" 
+                             alt="Achieng Atieno" 
+                             class="w-full h-full object-cover">
+                        <div class="team-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition">
+                            <div class="text-white p-4">
+                                <p>"Empowering girls with tech skills empowers entire communities."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-black">Achieng Atieno</h3>
+                    <p class="text-red-600 font-medium mb-2">Girls Program Coordinator</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Volunteer Coordinator -->
+                <div class="team-member text-center">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-400">
+                        <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" 
+                             alt="David Omondi" 
+                             class="w-full h-full object-cover">
+                        <div class="team-overlay absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 transition">
+                            <div class="text-white p-4">
+                                <p>"Volunteers bring diverse skills that enrich our programs."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-1 text-black">David Omondi</h3>
+                    <p class="text-red-600 font-medium mb-2">Volunteer Coordinator</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-red-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-gray-700 mb-6">
+                    Our team is supported by 15 dedicated volunteers and 8 community educators across West Pokot.
+                </p>
+                <a href="#contact" class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition">
+                    Join Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Voices of <span class="text-red-600">Impact</span>
+            </h2>
+            <!-- Success Stories Carousel (ADDED) -->
+            <div id="successCarousel" class="relative max-w-2xl mx-auto mb-12">
+                <div class="overflow-hidden rounded-xl shadow-lg bg-white">
+                    <div class="carousel-slide p-8" style="display: block;">
+                        <h3 class="text-xl font-bold text-black mb-2">Mary Wanjiku, Age 15</h3>
+                        <p class="text-gray-700 mb-2">"I never thought I could code. Now, I help my friends build websites!"</p>
+                        <div class="text-yellow-400 flex justify-center mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-slide p-8" style="display: none;">
+                        <h3 class="text-xl font-bold text-black mb-2">Samuel Kiprono, Volunteer</h3>
+                        <p class="text-gray-700 mb-2">"Volunteering here changed my life. The kids are so eager to learn!"</p>
+                        <div class="text-yellow-400 flex justify-center mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-slide p-8" style="display: none;">
+                        <h3 class="text-xl font-bold text-black mb-2">Amina Chebet, Parent</h3>
+                        <p class="text-gray-700 mb-2">"My daughter now dreams of becoming an engineer. Thank you!"</p>
+                        <div class="text-yellow-400 flex justify-center mb-2">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <button id="carouselPrev" class="absolute left-0 top-1/2 -translate-y-1/2 bg-red-600 text-white p-2 rounded-full shadow hover:bg-red-700 transition"><i class="fas fa-chevron-left"></i></button>
+                <button id="carouselNext" class="absolute right-0 top-1/2 -translate-y-1/2 bg-red-600 text-white p-2 rounded-full shadow hover:bg-red-700 transition"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <!-- Community Voices Section (ADDED) -->
+            <div class="max-w-4xl mx-auto mt-12">
+                <h3 class="text-2xl font-bold text-center mb-6 text-black">Community Voices</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg testimonial-card">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=100&q=80" 
+                                 alt="Pauline Nekesa" 
+                                 class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400">
+                            <div class="ml-3">
+                                <h3 class="font-bold text-black">Pauline Nekesa</h3>
+                                <p class="text-red-600 text-sm">Parent</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm">
+                            "My daughter's confidence has grown tremendously since joining the girls' coding program. She now helps me with my small business records using Excel."
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg testimonial-card">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=100&q=80" 
+                                 alt="Michael Rotich" 
+                                 class="w-12 h-12 rounded-full object-cover border-2 border-yellow-400">
+                            <div class="ml-3">
+                                <h3 class="font-bold text-black">Michael Rotich</h3>
+                                <p class="text-red-600 text-sm">Local Business Owner</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm">
+                            "We've hired two RuralShiftAfrica graduates for our IT support team. Their skills are impressive, and their work ethic is exceptional. This program is transforming our workforce."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (ADDED) -->
+    <section class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-black">
+                Frequently Asked <span class="text-red-600">Questions</span>
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold text-lg text-black mb-2">How can I donate a laptop?</h3>
+                    <p class="text-gray-700">Visit our Donate section and fill out the form, or email us at <a href="mailto:ruralshiftafrica@gmail.com" class="text-red-600 underline">ruralshiftafrica@gmail.com</a>.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold text-lg text-black mb-2">Can I volunteer remotely?</h3>
+                    <p class="text-gray-700">Yes! We welcome both onsite and remote volunteers. See the Support or Contact section for more info.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold text-lg text-black mb-2">Are donations tax-deductible?</h3>
+                    <p class="text-gray-700">We are working towards official non-profit status. Please contact us for the latest updates on tax-deductibility.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h3 class="font-bold text-lg text-black mb-2">How are funds used?</h3>
+                    <p class="text-gray-700">Funds go directly to equipment, internet, training, and community outreach. We are committed to transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
+                Get In <span class="text-red-600">Touch</span>
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="md:flex gap-8">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-6 text-black">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black">Our Location</h4>
+                                    <p class="text-gray-700">Kapenguria Town, West Pokot County, Kenya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-black mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black">Email Us</h4>
+                                    <p class="text-gray-700">ruralshiftafrica@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center text-yellow-400 mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black">Call Us</h4>
+                                    <p class="text-gray-700">0768 127 420</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white mr-4">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-black">WhatsApp</h4>
+                                    <p class="text-gray-700">0768 127 420</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mt-10 mb-6 text-black">Connect With Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-black hover:bg-gray-800 rounded-full flex items-center justify-center text-white transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/ruralshift" class="w-12 h-12 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/ruralshiftafrica" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/ruralshiftafrica" class="w-12 h-12 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="mt-8 bg-gray-100 p-6 rounded-lg">
+                            <h4 class="font-bold mb-4 text-black">Volunteer Inquiries</h4>
+                            <p class="text-gray-700 mb-4">
+                                Interested in volunteering with us? Please include your skills and availability in your message.
+                            </p>
+                            <a href="mailto:ruralshiftafrica@gmail.com" class="text-red-600 hover:underline">
+                                ruralshiftafrica@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-6 text-black">Send Us a Message</h3>
+                        
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="contact-email">Email</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="contact-subject">Subject</label>
+                                <select id="contact-subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                                    <option value="">Select a subject</option>
+                                    <option value="donation">Donation Inquiry</option>
+                                    <option value="volunteer">Volunteer Opportunity</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="media">Media Request</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="contact-message">Message</label>
+                                <textarea id="contact-message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="mt-16 bg-gray-100 rounded-xl overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.123456789012!2d35.12345678901234!3d1.2345678912345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTQnMDQuNSJOIDM1wrAwNyczNi4xIkU!5e0!3m2!1sen!2ske!4v1234567890123!5m2!1sen!2ske" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-16 bg-red-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Stay <span class="text-yellow-400">Connected</span>
+            </h2>
+            <p class="mb-8 max-w-2xl mx-auto">
+                Subscribe to our newsletter for updates on our programs, success stories, and how you can help.
+            </p>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" 
+                       class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-black">
+                <button type="submit" 
+                        class="bg-black hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-r-lg transition">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-3 overflow-hidden bg-white shadow-lg">
+                            <img src="https://i.imgur.com/qvRR6i0.png" alt="RuralShiftAfrica Logo" class="w-14 h-14 object-cover rounded-full border-4 border-yellow-400 bg-white shadow-lg" />
+                        </div>
+                        <span class="text-xl font-bold text-yellow-400">RuralShift<span class="text-red-600">Africa</span></span>
+                    </div>
+                    <p class="text-gray-400">
+                        Empowering the youth of West Pokot through digital literacy and tech education since 2025.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-yellow-400">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-red-600 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-red-600 transition">About Us</a></li>
+                        <li><a href="#mission" class="hover:text-red-600 transition">Our Mission</a></li>
+                        <li><a href="#support" class="hover:text-red-600 transition">Ways to Help</a></li>
+                        <li><a href="#donate" class="hover:text-red-600 transition">Donate</a></li>
+                        <li><a href="#contact" class="hover:text-red-600 transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-yellow-400">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-600 transition">Digital Literacy</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition">Girls Who Code</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition">Tech for Youth</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition">Community Workshops</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition">Teacher Training</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-yellow-400">Stay Updated</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to our newsletter for updates on our programs and impact.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-black w-full">
+                        <button type="submit" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-r-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-bold mb-2">Download Our App</h4>
+                        <div class="flex space-x-2">
+                            <a href="#" class="bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-google-play mr-2"></i>
+                                <span class="text-xs">Google Play</span>
+                            </a>
+                            <a href="#" class="bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-apple mr-2"></i>
+                                <span class="text-xs">App Store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2025 RuralShiftAfrica. All rights reserved.
+                </p>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">FAQ</a>
+                    <!-- Dark Mode Toggle -->
+    <div class="fixed right-4 bottom-4 z-50">
+        <button id="darkModeToggle" class="bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 transition">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        darkModeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Simple animation on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.fade-in, .card-hover, .testimonial-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Set initial state for animated elements
+        document.querySelectorAll('.fade-in, .card-hover, .testimonial-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+
+        // Run animations when page loads and on scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Hero Carousel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('#heroCarousel > div');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+        
+        // Initialize
+        showSlide(0);
+
+        // Impact Counter Animation (ADDED)
+        function animateCounter(id, target, duration) {
+            const el = document.getElementById(id);
+            let start = 0;
+            const increment = target / (duration / 16);
+            function update() {
+                start += increment;
+                if (start < target) {
+                    el.textContent = Math.floor(start);
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target;
+                }
+            }
+            update();
+        }
+        window.addEventListener('DOMContentLoaded', function() {
+            animateCounter('counter-children', 120, 1200);
+            animateCounter('counter-laptops', 35, 1200);
+            animateCounter('counter-volunteers', 15, 1200);
+        });
+
+        // Success Stories Carousel (ADDED)
+        let carouselIndex = 0;
+        const carouselSlides = document.querySelectorAll('#successCarousel .carousel-slide');
+        let carouselInterval;
+        function showCarouselSlide(idx) {
+            carouselSlides.forEach((slide, i) => {
+                slide.style.display = i === idx ? 'block' : 'none';
+            });
+        }
+        function startCarouselAutoAdvance() {
+            if (carouselInterval) clearInterval(carouselInterval);
+            carouselInterval = setInterval(() => {
+                carouselIndex = (carouselIndex + 1) % carouselSlides.length;
+                showCarouselSlide(carouselIndex);
+            }, 6000);
+        }
+        document.getElementById('carouselPrev').addEventListener('click', function() {
+            carouselIndex = (carouselIndex - 1 + carouselSlides.length) % carouselSlides.length;
+            showCarouselSlide(carouselIndex);
+            startCarouselAutoAdvance();
+        });
+        document.getElementById('carouselNext').addEventListener('click', function() {
+            carouselIndex = (carouselIndex + 1) % carouselSlides.length;
+            showCarouselSlide(carouselIndex);
+            startCarouselAutoAdvance();
+        });
+        showCarouselSlide(carouselIndex);
+        startCarouselAutoAdvance();
+    </script>
+</body>
+</html>
