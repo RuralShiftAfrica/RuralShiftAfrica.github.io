@@ -474,14 +474,9 @@
                         sponsors who can amplify our impact.
                     </p>
                     <div class="flex justify-center space-x-4">
-                        <a href="#" class="text-black hover:text-red-600 transition">
-                            <i class="fab fa-facebook-f text-xl"></i>
-                        </a>
+                        <!-- Removed Facebook and Instagram icons from this section as requested -->
                         <a href="https://x.com/ruralshift" class="text-black hover:text-red-600 transition" target="_blank" rel="noopener" aria-label="X (Twitter)">
                             <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="https://instagram.com/ruralshiftafrica" class="text-black hover:text-red-600 transition" target="_blank" rel="noopener" aria-label="Instagram">
-                            <i class="fab fa-instagram text-xl"></i>
                         </a>
                         <a href="https://linkedin.com/in/ruralshiftafrica" class="text-black hover:text-red-600 transition" target="_blank" rel="noopener" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in text-xl"></i>
@@ -975,17 +970,12 @@
                         
                         <h3 class="text-2xl font-bold mt-10 mb-6 text-black">Connect With Us</h3>
                         <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-black hover:bg-gray-800 rounded-full flex items-center justify-center text-white transition">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition">
+                            <!-- Only one Instagram, Twitter, and LinkedIn icon, no Facebook -->
+                            <a href="https://instagram.com/ruralshiftafrica" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
                             <a href="https://x.com/ruralshift" class="w-12 h-12 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="X (Twitter)">
                                 <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://instagram.com/ruralshiftafrica" class="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
                             </a>
                             <a href="https://linkedin.com/in/ruralshiftafrica" class="w-12 h-12 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center text-white transition" target="_blank" rel="noopener" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
@@ -1213,6 +1203,8 @@
             e.preventDefault();
             var overlay = document.getElementById('sponsorshipBrochure');
             overlay.style.display = 'flex';
+            overlay.scrollIntoView({behavior: 'auto'}); // Ensure overlay is in view
+            // Wait 500ms to ensure browser paints the overlay before PDF generation
             setTimeout(function() {
                 var content = document.getElementById('brochureContent');
                 html2pdf().set({
@@ -1227,9 +1219,10 @@
                     overlay.style.display = 'none';
                     alert('Sorry, there was a problem generating the PDF. Please try again or use a different browser.');
                 });
-            }, 100);
+            }, 500); // Increased delay for reliability
         });
     }
+    // If the PDF is still blank, check for global CSS that may hide the overlay or its children, or try a different browser.
     </script>
 
     <script>
