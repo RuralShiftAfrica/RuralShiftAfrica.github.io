@@ -8,27 +8,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://i.imgur.com/qvRR6i0.png">
-    <!-- Simple direct email sending without external services -->
+    <!-- EmailJS removed - using direct email approach -->
+    <!-- FormSubmit service for direct email sending -->
     <script>
-        // Simple email sending function that works immediately without external services
+        // Simple email sending function using FormSubmit service
         function sendEmail(formData, successMessage) {
-            // Create a simple form that submits to your email
             const form = document.createElement('form');
             form.method = 'POST';
-            form.action = 'mailto:ruralshiftafrica@gmail.com';
-            form.enctype = 'text/plain';
+            form.action = 'https://formsubmit.co/ruralshiftafrica@gmail.com';
+            form.target = '_blank';
             
-            // Add form data as query parameters
-            const queryParams = new URLSearchParams();
+            // Add form data
             Object.keys(formData).forEach(key => {
-                queryParams.append(key, formData[key]);
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = key;
+                input.value = formData[key];
+                form.appendChild(input);
             });
             
-            // Create mailto link with form data
-            const mailtoLink = `mailto:ruralshiftafrica@gmail.com?subject=${encodeURIComponent(formData.subject || 'Form Submission')}&body=${encodeURIComponent(formData.body || Object.entries(formData).map(([key, value]) => `${key}: ${value}`).join('\n\n'))}`;
+            // Add success redirect
+            const redirectInput = document.createElement('input');
+            redirectInput.type = 'hidden';
+            redirectInput.name = '_next';
+            redirectInput.value = window.location.href;
+            form.appendChild(redirectInput);
             
-            // Open email client with pre-filled data
-            window.location.href = mailtoLink;
+            // Submit form
+            document.body.appendChild(form);
+            form.submit();
+            document.body.removeChild(form);
             
             return true;
         }
@@ -1265,11 +1274,11 @@
     // If the PDF is still blank, check for global CSS that may hide the overlay or its children, or try a different browser.
     </script>
 
-         <script>
+    <script>
                    // Simple email functionality without external dependencies
          
-         // Mobile Menu Toggle
-         document.querySelector('button').addEventListener('click', function() {
+        // Mobile Menu Toggle
+        document.querySelector('button').addEventListener('click', function() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
         });
@@ -1374,7 +1383,7 @@ ${name}`
              // Send email directly
              if (sendEmail(formData, 'Donation details sent successfully!')) {
                  showDonationLoadingState(false);
-                 showDonationStatus('Thank you! Your donation details have been prepared. Your email client will open with a pre-filled message to ruralshiftafrica@gmail.com. Please review and send the email.', 'success');
+                 showDonationStatus('Thank you! Your donation details have been sent successfully to ruralshiftafrica@gmail.com. We will confirm receipt once the bank transfer is completed.', 'success');
                  
                  // Clear form
                  document.getElementById('name').value = '';
@@ -1383,7 +1392,7 @@ ${name}`
                  document.getElementById('amount').value = '25';
              } else {
                  showDonationLoadingState(false);
-                 showDonationStatus('Sorry, there was an error preparing your donation details. Please try again.', 'error');
+                 showDonationStatus('Sorry, there was an error sending your donation details. Please try again.', 'error');
              }
          });
         
@@ -1459,7 +1468,7 @@ RuralShiftAfrica Website`
               // Send email directly
               if (sendEmail(formData, 'Message sent successfully!')) {
                   showLoadingState(false);
-                  showEmailStatus('Thank you! Your message has been prepared. Your email client will open with a pre-filled message to ruralshiftafrica@gmail.com. Please review and send the email.', 'success');
+                  showEmailStatus('Message sent successfully to ruralshiftafrica@gmail.com! We will get back to you soon.', 'success');
                   
                   // Clear form
                   document.getElementById('contact-name').value = '';
@@ -1468,7 +1477,7 @@ RuralShiftAfrica Website`
                   document.getElementById('contact-message').value = '';
               } else {
                   showLoadingState(false);
-                  showEmailStatus('Sorry, there was an error preparing your message. Please try again.', 'error');
+                  showEmailStatus('Sorry, there was an error sending your message. Please try again.', 'error');
               }
           });
         
@@ -1532,10 +1541,10 @@ ${email}`
              
              // Send email directly
              if (sendEmail(formData, 'Newsletter subscription sent successfully!')) {
-                 alert('Thank you! Your newsletter subscription request has been prepared. Your email client will open with a pre-filled message to ruralshiftafrica@gmail.com. Please review and send the email.');
+                 alert('Thank you! Your newsletter subscription request has been sent successfully to ruralshiftafrica@gmail.com.');
                  document.getElementById('newsletterEmail').value = '';
              } else {
-                 alert('Sorry, there was an error preparing your newsletter subscription. Please try again.');
+                 alert('Sorry, there was an error subscribing to the newsletter. Please try again.');
              }
          });
 
@@ -1568,10 +1577,10 @@ ${email}`
              
              // Send email directly
              if (sendEmail(formData, 'Newsletter subscription sent successfully!')) {
-                 alert('Thank you! Your newsletter subscription request has been prepared. Your email client will open with a pre-filled message to ruralshiftafrica@gmail.com. Please review and send the email.');
+                 alert('Thank you! Your newsletter subscription request has been sent successfully to ruralshiftafrica@gmail.com.');
                  document.getElementById('footerNewsletterEmail').value = '';
              } else {
-                 alert('Sorry, there was an error preparing your newsletter subscription. Please try again.');
+                 alert('Sorry, there was an error subscribing to the newsletter. Please try again.');
              }
          });
 
