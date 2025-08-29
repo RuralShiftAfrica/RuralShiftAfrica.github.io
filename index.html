@@ -25,7 +25,7 @@
             });
             
             // Create mailto link with form data
-            const mailtoLink = `mailto:ruralshiftafrica@gmail.com?subject=${encodeURIComponent(formData.subject || 'Form Submission')}&body=${encodeURIComponent(Object.entries(formData).map(([key, value]) => `${key}: ${value}`).join('\n\n'))}`;
+            const mailtoLink = `mailto:ruralshiftafrica@gmail.com?subject=${encodeURIComponent(formData.subject || 'Form Submission')}&body=${encodeURIComponent(formData.body || Object.entries(formData).map(([key, value]) => `${key}: ${value}`).join('\n\n'))}`;
             
             // Open email client with pre-filled data
             window.location.href = mailtoLink;
